@@ -1,0 +1,16 @@
+{
+  "title": "Neuro Paper Schema",
+  "type": "object",
+  "properties": {
+    "title": {"type": "string"},
+    "authors": {"type": "array", "items": {"type": "string"}},
+    "year": {"type": "integer"},
+    "methods": {"type": "string"},
+    "datasets": {"type": "array", "items": {"type": "string"}},
+    "reproducibility_score": {"type": "number"},
+    "bids_compatible": {"type": "boolean"},
+    "nwb_mentioned": {"type": "boolean"},
+    "human_mind_modules": {"type": "array", "items": {"type": "string"}}
+  },
+  "required": ["title", "methods", "reproducibility_score"]
+}
